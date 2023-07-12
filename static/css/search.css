@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.search_page{
+    display: flex;
+}
+.search_page .left{
+    width: 25%;
+    border: 1px solid;
+    padding: 50px;
+}
+.search_page .product_type ul{
+    padding: 0px;
+}
+.search_page .product_type ul li{
+    list-style-type: none;
+    display: flex;
+}
+.search_page .brand ul{
+    padding: 0px;
+}
+.search_page .brand ul li{
+    list-style-type: none;
+    display: flex;
+}
+.search_page .availability ul{
+    padding: 0;
+}
+.search_page .availability ul li{
+    list-style-type: none;
+    display: flex;
+}
+.search_page .color .firstflex{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.search_page .color .firstflex div:nth-child(1){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .firstflex div:nth-child(2){
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+.search_page .color .firstflex div:nth-child(3){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .firstflex div:nth-child(4){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .firstflex div:nth-child(5){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .secondflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 200px;
+}
+.search_page .color .secondflex div:nth-child(1){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .secondflex div:nth-child(2){
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+.search_page .color .secondflex div:nth-child(3){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .secondflex div:nth-child(4){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color .secondflex div:nth-child(5){
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50px;
+}
+.search_page .color ul{
+    padding: 0;
+}
+.search_page .size h5{
+    border: 1px solid;
+    padding: 10px;
+}
+.search_page .size div{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.search_page .recent_post div{
+    border: 1px solid;
+    height: 800px;
+}
+.search_page .right{
+    width: 80%;
+    padding: 25px;
+}
+.search_page .right .firstflex{
+    display: flex;
+    justify-content: space-between;
+}
+.search_page .right .firstflex div:nth-child(1){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .firstflex div:nth-child(2){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .firstflex div:nth-child(3){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;    
+}
+.search_page .right .secondflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.search_page .right .secondflex div:nth-child(1){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .secondflex div:nth-child(2){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .secondflex div:nth-child(3){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;    
+}
+.search_page .right .thirdflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.search_page .right .thirdflex div:nth-child(1){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .thirdflex div:nth-child(2){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .thirdflex div:nth-child(3){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;    
+}
+.search_page .right .forthflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.search_page .right .forthflex div:nth-child(1){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .forthflex div:nth-child(2){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .forthflex div:nth-child(3){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;    
+}
+.search_page .right .fifthflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.search_page .right .fifthflex div:nth-child(1){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .fifthflex div:nth-child(2){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.search_page .right .fifthflex div:nth-child(3){
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;    
+}
