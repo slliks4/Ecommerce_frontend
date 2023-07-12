@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.homepage{
+    display: flex;
+
+}
+.left{
+    width: 70%;
+    border: 1px solid black;
+    padding: 15px 5%;
+    padding-top: 50px;
+}
+.left .first_page h1{
+    font-size: 30px;
+}
+.left .first_page h2{
+    font-size: 20px;
+    text-align: center;
+}
+.left .first_page ul{
+    display: flex;
+    justify-content: space-between;
+    padding-right:40%;
+}
+.left .first_page div{
+    display: flex;
+    justify-content: space-between;
+}
+.left .first_page div button{
+    width: 49%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+.left .second_page.right{
+    width: 40%;
+    border: 1px solid black;
+}
+.left .second_page .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+.left .second_page .hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 210px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.left .second_page .hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 210px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.left .second_page div{
+    display: flex;
+    justify-content: space-between;
+}
+.third_page input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.third_page .email{
+    display: flex;
+}
+.third_page .checkbox{
+    display: flex;
+    border: 1px solid black;
+}
+.forth_page  .country input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.forth_page  .address input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.forth_page  .apartment input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.forth_page .names{
+    display: flex;
+    justify-content: space-between;
+}
+.forth_page .names input{
+    width: 48%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.forth_page .city{
+    display: flex;
+    justify-content: space-between;
+}
+.forth_page .city input{
+    width: 31%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.fifth_page{
+    display: flex;
+    justify-content: space-between;
+}
+.fifth_page h1{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.fifth_page h1 a{
+    text-decoration: none;
+}
+.fifth_page button{
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    border-radius: 15px;
+    border-color: blue;
+}
+.fifth_page button h1{
+    font-size: 13px;
+}
+.six_page{
+    border-top: 1px solid #000;
+    margin-top: 50px;
+}
+.six_page h1{
+    font-size: 10px;
+}
