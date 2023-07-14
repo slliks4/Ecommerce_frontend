@@ -767,6 +767,7 @@ footer>div:nth-of-type(3)>div>div:nth-child(2) div{
 }
 
 
+
 /* PRODUCT_VIEW_PAGE */
 
 .product_view .first_design{
@@ -868,7 +869,7 @@ footer>div:nth-of-type(3)>div>div:nth-child(2) div{
     display: block;
     margin-bottom: 10px;
 }
-.product_view .first_design .flex div:nth-child(2) form button{
+.product_view .first_design .flex div:nth-child(2) form:nth-of-type(1) button{
     width: 40px;
     height: 40px;
     display: flex;
@@ -877,22 +878,27 @@ footer>div:nth-of-type(3)>div>div:nth-child(2) div{
     text-transform: capitalize;
     font-weight: bold;
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid silver;
     background-color: transparent;
 }
-.product_view .first_design .flex div:nth-child(2) form input[type=text]{
+.product_view .first_design .flex div:nth-child(2) form:nth-of-type(1) input[type=text]{
     font-weight: bold;
     font-size: 18px;
     width: 90px;
     outline: none;
     text-align: center;
 }
-.product_view .first_design .flex div:nth-child(2)>div:last-child a:nth-of-type(1){
-    display: block;
-    width: 100%;
+.product_view .first_design .flex div:nth-child(2)>div:last-child form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product_view .first_design .flex div:nth-child(2)>div:last-child button:nth-of-type(1){
+    width: 90%;
+    border: none;
+    padding: 25px 0px;
     border-radius: 20px;
     margin: 20px 0px;
-    padding: 15px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -901,12 +907,18 @@ footer>div:nth-of-type(3)>div>div:nth-child(2) div{
     background-color: #FF4B2B;
     color: white;
 }
-.product_view .first_design .flex div:nth-child(2)>div:last-child a:nth-of-type(2){
-    display: block;
+.product_view .first_design .flex div:nth-child(2)>div:last-child button:nth-of-type(2){
+    text-align: center;
+    width: 10%;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+}
+.product_view .first_design .flex div:nth-child(2)>div:last-child button:nth-of-type(3){
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid silver;
+    padding: 25px 0px;
     border-radius: 20px;
-    padding: 15px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -918,7 +930,173 @@ footer>div:nth-of-type(3)>div>div:nth-child(2) div{
 .product_view .description{
     padding: 40px 5% 40px 2%;
     height: 80vh;
+}
+.product_view .description nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+.product_view .description nav ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 18px;
+}
+.product_view .description nav ul .active{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+
+
+/* CART  PAGE */
+
+.cart>div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 2%;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1){
+    width: 70%;
+    border: 1px solid silver;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1) span{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1) h1{
+    text-transform: capitalize;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1) span h2{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+    padding-top: 10px;
+    border-top: 1px solid silver;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div form:nth-of-type(1){
+    width: 3%;
+}
+.cart>div:nth-of-type(1) .selected{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    color: transparent;
+    border: 1px solid silver;
+    border-radius: none;
+}
+.cart>div:nth-of-type(1) .unselected{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: none;
+    color: transparent;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .img{
+    width: 22%;
+    max-height: 250px;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text{
+    padding-left: 20px;
+    width: 65%;
+}
+.cart>div:nth-of-type(1) .form_quantity{
+    width: 50px;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text h1 a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text ul{
+    padding: none;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text ul li{
+    list-style-type: none;
+    padding: 2px 0px;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text>div:nth-of-type(1) form>div:nth-of-type(1){
+    display: flex;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text>div:nth-of-type(1) form>div:nth-of-type(1) button{
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    border: 1px solid silver;
+    padding: 10px;
+    background-color: transparent;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .text form input[name=quantity_val]{
+    text-align: center;
+    width: 50px;
+    color: black;
+}
+.cart>div:nth-of-type(1) .div{
+    width: 700px;
+    display: flex;
+    margin-top: 20px;
+}
+.cart>div:nth-of-type(1) .div button{
+    padding: 0px 20px;
+    border: none;
+    border-left: 1px solid black;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .price{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px;
+    width: 10%;
+}
+.cart>div:nth-of-type(1)>div:nth-child(1)>div>div .price h3{
+    font-weight: 400;
+}
+.cart>div:nth-of-type(1)>div:nth-child(2){
+    border: 1px solid silver;
+    border-radius: 20px;
+    background-color: white;
+    width: 25%;
+    height: fit-content;
+    padding: 20px;
+
+}
+.cart>div:nth-of-type(1)>div:nth-child(2) h3{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.cart>div:nth-of-type(1)>div:nth-child(2) a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid silver;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
 }

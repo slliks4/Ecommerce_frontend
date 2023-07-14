@@ -12,7 +12,9 @@
 <body>
     <header id="#top">
         <div>
-            <h1>E - <span>commerce</span></h1>
+            <h1>
+                <a href="index.html">E - <span>commerce</span></a>
+            </h1>
             <form class="search" action="">
                 <input type="search" name="search_store" class="search_store">
                 <button><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -35,7 +37,7 @@
             </div>
             <div>
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <a href="">cart (10)</a>
+                <a href="cart.html">cart (10)</a>
             </div>
         </div>
         <div>
@@ -175,27 +177,146 @@
                     <label for="quantity">quantity:</label>
                     <form action="" method="POST">
                         <button type="submit">-</button>
-                        <input type="text">
+                        <input type="text" value="1">
                         <button>+</button>
                     </form>
                     <p>
                         <b>subtotal</b> : $59.00
                     </p>
                     <div>
-                        <a href="" class="colored">add to cart</a>
-                        <input type="checkbox" name="checkbox" id="checkbox">
-                        <label for="checkbox">i agree with the terms and conditions</label>
-                        <a href="checkout.html">buy now</a>
+                        <form action="">
+                            <button href="" class="colored">add to cart</button>
+                            <button href="" class="colored"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button href="checkout.html">buy now</a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="description">
-            <h1>product description</h1>
+            <nav>
+                <ul>
+                    <li class="active">description</li>
+                    <li>additional information</li>
+                    <li>shipping & return</li>
+                    <li>custom tab</li>
+                    <li> review</li>
+                </ul>
+            </nav>
         </div>
         <div class="second_design">
             <div>
                 <h1>similar products</h1>
+                <a href="">view all</a>
+            </div>
+            <div class="flex">
+                <button class="slide_left">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <button class="slide_right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <button>.</button>
+                    </li>
+                    <li>
+                        <button>.</button>
+                    </li>
+                    <li>
+                        <button>.</button>
+                    </li>
+                    <li>
+                        <button>.</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="second_design">
+            <div>
+                <h1>recently veiwed</h1>
                 <a href="">view all</a>
             </div>
             <div class="flex">
