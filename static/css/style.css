@@ -1,3 +1,6 @@
+
+/* INHERITED STYLE FOR ALL PAGES */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@
 body{
     position: relative;
     scroll-behavior: smooth;
+    background-color: whitesmoke;
 }
 .abstract_options{
     z-index: 5;
@@ -18,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid silver;
 }
 .abstract_options ul{
     width: 100%;
@@ -56,6 +60,10 @@ header>div:nth-of-type(1) h1{
     text-transform: capitalize;
     font-size: 30px;
 }
+header>div:nth-of-type(1) h1 a{
+    text-decoration: none;
+    color: white;
+}
 header>div:nth-of-type(1) h1 span{
     letter-spacing: 2px;
     text-decoration: underline;
@@ -83,7 +91,7 @@ header>div:nth-of-type(1)>form:nth-of-type(1) button{
     color: #FF4B2B;
     font-size: 18px;
     text-align: center;
-    border-left: 1px solid black;
+    border-left: 1px solid silver;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -119,7 +127,7 @@ header>div:nth-of-type(2){
     align-items: center;
     justify-content: space-between;
     padding: 10px 2% 10px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid silver;
     background-color: white;
 }
 header>div:nth-of-type(2)>div:nth-of-type(1){
@@ -190,13 +198,101 @@ header>div:nth-of-type(2)>div:nth-of-type(3)>div a{
     color: black;
 }
 header>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-child(1){
-    border-right: 1px solid black;
+    border-right: 1px solid silver;
 }
+footer{
+    background-color: white;
+    border: 1px solid silver;
+    padding: 40px 2% 0px;
+}
+footer>div:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer>div:nth-of-type(1) h1{
+    text-transform: capitalize;
+}
+footer>div:nth-of-type(1) p{
+    padding-top: 5px;
+}
+footer>div:nth-of-type(1) form{
+    margin-top: 20px;
+}
+footer>div:nth-of-type(1) form{
+    display: flex;
+    width: 40%;
+}
+footer>div:nth-of-type(1) form input{
+    width: 80%;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 0;
+}
+footer>div:nth-of-type(1) form button{
+    width: 20%;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: #FF4B2B;
+    color: white;
+    text-transform: capitalize;
+}
+footer>div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+} 
+footer>div:nth-of-type(2) h4{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+footer>div:nth-of-type(2) li{
+    list-style-type: none;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+footer>div:nth-of-type(2) li a{
+    text-decoration: none;
+    text-transform: capitalize; 
+}
+footer>div:nth-of-type(2)>div:nth-child(5) li a{
+    text-decoration: none;
+    text-transform: lowercase;
+}
+footer>div:nth-of-type(3){
+    margin: 40px 0px 10px;
+} 
+footer>div:nth-of-type(3) p{
+    font-size: 12px;
+}
+footer>div:nth-of-type(3)>div{
+    display: flex;
+    justify-content: space-between;
+}
+footer>div:nth-of-type(3)>div>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+}
+footer>div:nth-of-type(3)>div>div:nth-child(2) div{
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 50%;
+}
+
+
+/* INDEX.HTML PAGE (HOME PAGE) */
+
 .home_page>div:nth-child(1){
     width: 100%;
     height: 80vh;
-    padding: 60px 5% 0px;
-    border: 1px solid black;
+    padding: 60px 5% 0px ;
+    background-color: white;
 }
 .home_page>div:nth-child(1)>div:nth-of-type(1){
     display: flex;
@@ -222,7 +318,7 @@ header>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-child(1){
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid silver;
     border-radius: 20px;
 }
 .home_page>div:nth-child(1)>div:nth-of-type(1)>div:nth-child(2){
@@ -252,7 +348,7 @@ header>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-child(1){
 .home_page>div:nth-child(1)>div:nth-of-type(2) ul li button{
     width: 18px;
     height: 18px;
-    border: 1px solid black;
+    border: 1px solid silver;
     border-radius: 50%;
     background-color: transparent;
     color: transparent;
@@ -261,7 +357,7 @@ header>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-child(1){
     border-radius: 20px;
     background-color: #ff4b2b;
     color: white;
-    margin: 40px 5%;
+    margin: 40px 3% 40px 2%;
     padding: 20px 0px;
     text-align: center;
 }
@@ -278,71 +374,81 @@ header>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-child(1){
     font-size: 18px;
     color: white;
 }
-.home_page>div:nth-child(3){
-    padding: 0px 5% 20px;
+.second_design{
+    padding: 0px 5% 20px 2%;
     position: relative;
 }
-.slide_left{
-    position: absolute;
-    left: 3%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: white;
-    font-size: 18px;
-}
-.slide_right{
-    position: absolute;
-    right: 3%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: white;
-    font-size: 18px;
-}
-.home_page>div:nth-child(3)>div:nth-of-type(1){
+.second_design>div:nth-of-type(1){
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.home_page>div:nth-child(3) h1{
+.second_design>div:nth-of-type(1) h1{
     text-transform: capitalize;
     font-weight: 400;
 }
-.home_page>div:nth-child(3) .flex{
+.second_design>div:nth-of-type(1) a{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.second_design .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
-.home_page>div:nth-child(3) .flex_item{
+.second_design .flex .slide_left{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 18px;
+}
+.second_design .flex .slide_right{
+    position: absolute;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 18px;
+}
+.second_design .flex_item{
+    background-color: white;
     width: 23%;
-    margin: 10px 0px;
     border: 1px solid silver;
 }
-.home_page>div:nth-child(3) .flex_item .img{
+.second_design .flex_item .img{
     width: 100%;
     height: 220px;
     border-bottom: 1px solid silver;
 }
-.home_page>div:nth-child(3) .flex_item .text{
+.second_design .flex_item .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.second_design .flex_item .text{
     padding: 20px;
 }
-.home_page>div:nth-child(3) .flex_item .text div{
+.second_design .flex_item .text div{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
 }
-.home_page>div:nth-child(3) .flex_item .text small{
+.second_design .flex_item .text small{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.home_page>div:nth-child(3) .flex_item .text h2 a{
+.second_design .flex_item .text h2 a{
     text-decoration: none;
     display: block;
     text-transform: capitalize;
@@ -350,131 +456,469 @@ header>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-child(1){
     font-weight: bolder;
     padding: 10px 0px;
 }
-.home_page>div:nth-child(3) .flex_item .text h3{
+.second_design .flex_item .text h3{
     font-size: 15px;
 }
-.home_page>div:nth-child(3) .flex_item .text div a{
-    text-decoration: none;
+.second_design .flex_item .text h3 a{
+    display: block;
     text-transform: capitalize;
+    padding: 10px 0px;
 }
-.home_page>div:nth-child(3)>div:nth-of-type(3){
+.second_design .flex_item .text form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second_design .flex_item .text form button[class=add_to_cart]{
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 1px solid silver;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.second_design .flex_item .text form button[class=add_wish_list]{
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.second_design>div:nth-of-type(3){
     width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
-.home_page>div:nth-child(3)>div:nth-of-type(3) ul{
+.second_design>div:nth-of-type(3) ul{
     display: flex;
 }
-.home_page>div:nth-child(3)>div:nth-of-type(3) ul li{
+.second_design>div:nth-of-type(3) ul li{
     list-style-type: none;
     padding: 0px 15px;
 }
-.home_page>div:nth-child(3)>div:nth-of-type(3) ul li button{
+.second_design>div:nth-of-type(3) ul li button{
     width: 18px;
     height: 18px;
-    border: 1px solid black;
+    border: 1px solid silver;
+    background-color: white;
     border-radius: 50%;
-    background-color: transparent;
     color: transparent;
 }
-.home_page>div:nth-child(4){
-    padding: 0px 5% 20px;
-    position: relative;
+.third_design{
+    padding: 0px 5% 20px 2%;
 }
-.slide_left{
-    position: absolute;
-    left: 3%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: white;
-    font-size: 18px;
-}
-.slide_right{
-    position: absolute;
-    right: 3%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: white;
-    font-size: 18px;
-}
-.home_page>div:nth-child(4)>div:nth-of-type(1){
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.home_page>div:nth-child(4) h1{
+.third_design>h3:nth-of-type(1){
     text-transform: capitalize;
     font-weight: 400;
 }
-.home_page>div:nth-child(4) .flex{
+.third_design .flex{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
 }
-.home_page>div:nth-child(4) .flex_item{
-    width: 23%;
-    margin: 10px 0px;
+.third_design .flex .left{
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+}
+.third_design .flex .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.third_design .flex .center{
+    background-color: white;
+    position: relative;
+    border: 1px solid silver;
+    padding: 20px 0px;
+    border-radius: 20px;
+    width: 58%;
+}
+.third_design .flex .center>div:nth-child(1){
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+.third_design .flex .center>div:nth-child(1) .slide_left{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 18px;
+}
+.third_design .flex .center>div:nth-child(1) .slide_right{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 18px;
+}
+.third_design .flex .center>div:nth-child(1) .flex_item{
+    width: 32.5%;
     border: 1px solid silver;
 }
-.home_page>div:nth-child(4) .flex_item .img{
+.third_design .flex .center>div:nth-child(1) .flex_item .img{
     width: 100%;
-    height: 220px;
+    height: 180px;
     border-bottom: 1px solid silver;
 }
-.home_page>div:nth-child(4) .flex_item .text{
-    padding: 20px;
+.third_design .flex .center>div:nth-child(1) .flex_item .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.home_page>div:nth-child(4) .flex_item .text div{
+.third_design .flex .center>div:nth-child(1) .flex_item .text{
+    padding: 10px;
+}
+.third_design .flex .center>div:nth-child(1) .flex_item .text div{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
 }
-.home_page>div:nth-child(4) .flex_item .text small{
+.third_design .flex .center>div:nth-child(1) .flex_item .text small{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.home_page>div:nth-child(4) .flex_item .text h2 a{
+.third_design .flex .center>div:nth-child(1) .flex_item .text h2 a{
     text-decoration: none;
     display: block;
     text-transform: capitalize;
     font-size: 15px;
     font-weight: bolder;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
-.home_page>div:nth-child(4) .flex_item .text h3{
+.third_design .flex .center>div:nth-child(1) .flex_item .text h3{
     font-size: 15px;
 }
-.home_page>div:nth-child(4) .flex_item .text div a{
-    text-decoration: none;
+.third_design .flex .center>div:nth-child(1) .flex_item .text h3 a{
+    display: block;
     text-transform: capitalize;
+    padding: 5px 0px;
 }
-.home_page>div:nth-child(4)>div:nth-of-type(3){
+.third_design .flex .center>div:nth-child(1) .flex_item .text form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.third_design .flex .center>div:nth-child(1) .flex_item .text form button[class=add_to_cart]{
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 1px solid silver;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.third_design .flex .center>div:nth-child(1) .flex_item .text form button[class=add_wish_list]{
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.third_design .flex .center>div:nth-child(2){
     width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
-.home_page>div:nth-child(4)>div:nth-of-type(3) ul{
+.third_design .flex .center>div:nth-child(2) ul{
     display: flex;
 }
-.home_page>div:nth-child(4)>div:nth-of-type(3) ul li{
+.third_design .flex .center>div:nth-child(2) ul li{
     list-style-type: none;
     padding: 0px 15px;
 }
-.home_page>div:nth-child(4)>div:nth-of-type(3) ul li button{
+.third_design .flex .center>div:nth-child(2) ul li button{
     width: 18px;
     height: 18px;
-    border: 1px solid black;
+    border: 1px solid silver;
+    background-color: white;
     border-radius: 50%;
     background-color: transparent;
     color: transparent;
+}
+.third_design .flex .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 20%;
+    border: 1px solid silver;
+    border-radius: 20px;
+    background-color: white;
+}
+.third_design .flex .right .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid silver;
+    padding: 15px;
+}
+.third_design .flex .right .flex h3{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.third_design .flex .right .flex>div:nth-of-type(2){
+    width: 50px;
+    height: 50px;
+}
+.third_design .flex .right .flex>div:nth-of-type(2) img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.third_design .flex .right>div:nth-of-type(4){
+    border: 1px solid silver;
+    background-color: white;
+    padding: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.fourth_design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% 20px 2%;
+}
+.fourth_design>div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border: 1px solid silver;
+    border-radius: 20px;
+    background-color: white;
+    width: 32%;
+    height: 35vh;
+}
+.fourth_design>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.fourth_design>div a{
+    display: block;
+    position: absolute;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    background-color: #FF4B2B;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.fifth_design{
+    padding: 20px 5% 60px 2%;
+}
+.fifth_design .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fifth_design .flex_item{
+    border: 1px solid silver;
+    background-color: white;
+    border-radius: 20px;
+    width: 32%;
+    padding: 10px;
+}
+.fifth_design .flex_item>div:nth-child(1){
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.fifth_design .flex_item>div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.fifth_design .flex_item h4{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.fifth_design .flex_item p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+/* PRODUCT_VIEW_PAGE */
+
+.product_view .first_design{
+    padding: 0px 5% 0px 2%;
+    background-color: white;
+
+}
+.product_view .first_design .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.product_view .first_design .flex div:nth-child(1){
+    width: 45%;
+    padding: 20px 0px;
+    height: fit-content;
+}
+.product_view .first_design .flex div:nth-child(1) .image{
+    width: 100%;
+    height: 400px;
+}
+.product_view .first_design .flex div:nth-child(1) .image img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.product_view .first_design .flex div:nth-child(1) .flex_image{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product_view .first_design .flex div:nth-child(1) .flex_image .slide_left{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 18px;
+}
+.product_view .first_design .flex div:nth-child(1) .flex_image .slide_right{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 18px;
+}
+.product_view .first_design .flex div:nth-child(1) .flex_image div{
+    border: 1px solid silver;
+    width: 30%;
+    height: 120px;
+}
+.product_view .first_design .flex div:nth-child(1) .flex_image div img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.product_view .first_design .flex div:nth-child(2){
+    width: 55%;
+    padding: 40px;
+}
+.product_view .first_design .flex div:nth-child(2) h2{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.product_view .first_design .flex div:nth-child(2) small{
+    display: block;
+    margin: 20px 0px;
+}
+.product_view .first_design .flex div:nth-child(2) small a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+}
+.product_view .first_design .flex div:nth-child(2) ul{
+    padding: 20px 0px;
+}
+.product_view .first_design .flex div:nth-child(2) ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+    padding: 5px 0px;
+}
+.product_view .first_design .flex div:nth-child(2) form{
+    display: flex;
+    padding-bottom: 20px;
+}
+.product_view .first_design .flex div:nth-child(2) label{
+    text-transform: capitalize;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.product_view .first_design .flex div:nth-child(2) form button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.product_view .first_design .flex div:nth-child(2) form input[type=text]{
+    font-weight: bold;
+    font-size: 18px;
+    width: 90px;
+    outline: none;
+    text-align: center;
+}
+.product_view .first_design .flex div:nth-child(2)>div:last-child a:nth-of-type(1){
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #FF4B2B;
+    color: white;
+}
+.product_view .first_design .flex div:nth-child(2)>div:last-child a:nth-of-type(2){
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10px 0px;
+    color: #FF4B2B;
+}
+.product_view .description{
+    padding: 40px 5% 40px 2%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

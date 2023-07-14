@@ -6,95 +6,404 @@
     <title>
         shopping mall
     </title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="index.html">
-                skills shopping
-            </a>
-        </h1>
-        <form action="" method="POST">
-            <input type="search" name="search_product" id="">
-            <button type="submit">search</button>
-        </form>
+    <header id="#top">
+        <div>
+            <h1>E - <span>commerce</span></h1>
+            <form class="search" action="">
+                <input type="search" name="search_store" class="search_store">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <a href="">wish list</a>
+            </div>
+            <div>
+                <i class="fa fa-gift" aria-hidden="true"></i>
+                <a href="">gift cards</a> 
+            </div>
+            <!-- <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="">sign in</a>
+            </div> -->
+            <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>hello <a href="">skills</a> || <a href="">logout</a></span>
+            </div>
+            <div>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="">cart (10)</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <i class="fa fa-th" aria-hidden="true"></i>
+                    <a class="product_categories" >categories</a>
+                </div>
+                <div class="categories_dropDown" >
+                    <ul>
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics the dfdsaf adfkdf adfd</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>                        
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>                        
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>                        
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="">electronics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <a href="">shop</a>
+                <a href="">product</a>
+                <a href="">blog</a>
+                <a href="">new in</a>
+                <a href="">trend</a>
+                <a href="">popular</a>
+                <a href="">collection</a>
+            </div>
+            <div>
+                <div>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <a href="">help</a>
+                </div>
+                <div class="currency">
+                    en/us
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="abstract_options">
         <ul>
             <li>
-                <p>
-                    hello skills || 
-                    <a href="">log out</a>
-                </p>
+                <a href="#top">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                <a href="">returns & orders</a>
+                <a href="">              
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                4 <a href="cart.html"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a href="">              
+                    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                </a>
             </li>
         </ul>
-    </header>
+    </div>
     <section class="product_view">
-        <span class="header">
-            <a href="index.html">home</a>
-            <p>product category</p>
-            <p>product name</p>
-        </span>
-        <div class="flex" >
-            <div>
-                <div class="image">
-                    <img src="" alt="">
+        <div class="first_design">
+            <div class="flex" >
+                <div>
+                    <div class="image">
+                        <img src="/media/images/product-3.webp" alt="">
+                    </div>
+                    <div class="flex_image">
+                        <button class="slide_left">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <div>
+                            <img src="/media/images/product-3.webp" alt="">
+                        </div>
+                        <div>
+                            <img src="/media/images/product-4.webp" alt="">
+                        </div>
+                        <div>
+                            <img src="/media/images/product-1.jpg" alt="">
+                        </div>
+                        <button class="slide_right">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="flex_image">
-                    <
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    >
-                </div>
-            </div>
-            <div>
-                <h2>product category - name of item</h2>
-                <small>
-                    no reviews
-                </small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab maxime, harum totam accusantium praesentium beatae magni nam itaque, porro ipsa ullam laboriosam consequatur, nisi adipisci non modi sapiente. Omnis!
-                </p>
-                <ul>
-                    <li>category : item category</li>
-                    <li>color : black</li>
-                </ul>
-                <h3>
-                    $ 59.00
-                </h3>
-                <span class="prompt">
-                    please hurry! only 9 left in stock
-                </span>
-                <form action="" method="POST">
+                <div>
+                    <h2>product category - name of item</h2>
+                    <small>
+                        <a href="">no reviews</a>
+                    </small>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab maxime, harum totam accusantium praesentium beatae magni nam itaque, porro ipsa ullam laboriosam consequatur, nisi adipisci non modi sapiente. Omnis!
+                    </p>
+                    <ul>
+                        <li> <b>category :</b> item category</li>
+                        <li> <b>color :</b> black</li>
+                        <li> <b>price :</b> $ 59.00</li>
+                        <li> <b>instock :</b> 100 units</li>
+                    </ul>
                     <label for="quantity">quantity:</label>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                    <button type="submit">change</button>
-                </form>
-                <p>
-                    subtotal: $59.00
-                </p>
-                <a href="" class="colored">add to cart</a>
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox">i agree with the terms and conditions</label>
-                <a href="checkout.html">buy now</a>
+                    <form action="" method="POST">
+                        <button type="submit">-</button>
+                        <input type="text">
+                        <button>+</button>
+                    </form>
+                    <p>
+                        <b>subtotal</b> : $59.00
+                    </p>
+                    <div>
+                        <a href="" class="colored">add to cart</a>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">i agree with the terms and conditions</label>
+                        <a href="checkout.html">buy now</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="content">
-            <h1> descriptions and other informations</h1>
+        <div class="description">
+            <h1>product description</h1>
         </div>
+        <div class="second_design">
+            <div>
+                <h1>similar products</h1>
+                <a href="">view all</a>
+            </div>
+            <div class="flex">
+                <button class="slide_left">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex_item">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <small>item category</small>
+                        <h2>
+                            <a href="/templates/product_view.html">name of item</a>
+                        </h2>
+                        <h3>price: <span>$ 49.00</span></h3>
+                        <h3>
+                            <a href="">see similar</a>
+                        </h3>
+                        <form action="" class="cart" method="POST">
+                            <input type="hidden" name="product_id" class="product_id">
+                            <button class="add_to_cart">add to cart</button>
+                            <button class="add_wish_list"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <button class="slide_right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <button>.</button>
+                    </li>
+                    <li>
+                        <button>.</button>
+                    </li>
+                    <li>
+                        <button>.</button>
+                    </li>
+                    <li>
+                        <button>.</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fourth_design">
+            <div>
+                <img src="/media/images/home-11.webp" alt="">
+                <a href="">shop now</a>
+            </div>
+            <div>
+                <img src="/media/images/home-12.webp" alt="">
+                <a href="">shop now</a>
+            </div>
+            <div>
+                <img src="/media/images/home-13.webp" alt="">
+                <a href="">shop now</a>
+            </div>
+        </div>
+        <br><br>
     </section>
     <footer>
-
+        <div>
+            <h1>subscribe to our newsletter</h1>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <form class="news_letter" action="" method="POST">
+                <input type="search" name="newsletter" class="newsletter">
+                <button class="submit" >submit</button>
+            </form>
+        </div>
+        <div>
+            <div>
+                <h4>shop</h4>
+                <ul>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">electronics</a></li>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">electronics</a></li>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">view all</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>top brands</h4>
+                <ul>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">electronics</a></li>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">electronics</a></li>
+                    <li><a href="">clothes & accessories</a></li>
+                    <li><a href="">view all</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>further info</h4>
+                <ul>
+                    <li><a href="">about</a></li>
+                    <li><a href="">customer service</a></li>
+                    <li><a href="">reward program</a></li>
+                    <li><a href="">shipping & returns</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">terms & conditions</a></li>
+                    <li><a href="">blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>customer service</h4>
+                <ul>
+                    <li><a href="">search terms</a></li>
+                    <li><a href="">advance search</a></li>
+                    <li><a href="">orders and returns</a></li>
+                    <li><a href="">contact us</a></li>
+                    <li><a href="">theme FAQs</a></li>
+                    <li><a href="">consultant</a></li>
+                    <li><a href="">store locations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>E-commerce</h4>
+                <ul>
+                    <li>contact us:</li>
+                    <li>202 rupukwu Rd, Nigeria, TN 38554</li>
+                    <li>call us : <a href="tel:+2348108704178">+2348108704178</a></li>
+                    <li>email us: <a href="mailto:perfectomerchants@gmail.com">perfectomerchants@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="flex">
+                <div>
+                    <p>
+                        © 2023 Ella Demo. All Rights Reserved. Powered By Shopify.
+                        <br>
+                        Shopify Themes By Halothemes.net
+                    </p>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
