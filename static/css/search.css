@@ -244,105 +244,114 @@
     font-size: 15px;
 }
 .search_page .right{
-    width: 80%;
-    padding: 25px;
+    width: 75%;
+    margin-right:40px
 }
-.search_page .right .firstflex{
+.search_page .right .first_div{
     display: flex;
     justify-content: space-between;
 }
-.search_page .right .firstflex div:nth-child(1){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
-}
-.search_page .right .firstflex div:nth-child(2){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
-}
-.search_page .right .firstflex div:nth-child(3){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;    
-}
-.search_page .right .secondflex{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-}
-.search_page .right .secondflex div:nth-child(1){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
-}
-.search_page .right .secondflex div:nth-child(2){
+.search_page .right .first_div .container{
     border: 1px solid black;
     width: 300px;
-    height: 400px;
+    height: 450px;
 }
-.search_page .right .secondflex div:nth-child(3){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;    
+.search_page .right .first_div .image{
+    border-bottom: 1px solid #000;
+    width: 300px;
+    height: 300px;
 }
-.search_page .right .thirdflex{
+.search_page .right .first_div .text{
+    text-align: center;
+}
+.search_page .right .second_div{
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 50px;
 }
-.search_page .right .thirdflex div:nth-child(1){
+.search_page .right .second_div .container{
     border: 1px solid black;
-    width: 280px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
 }
-.search_page .right .thirdflex div:nth-child(2){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
+.search_page .right .second_div .image{
+    border-bottom: 1px solid black;
+    width: 300px;
+    height: 300px;
 }
-.search_page .right .thirdflex div:nth-child(3){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;    
+.search_page .right .second_div .text{
+    text-align: center;
 }
-.search_page .right .forthflex{
+.search_page .right .total{
+    text-align: center;
+}
+.search_page .right .total h5{
+    padding: 20px;
+    font-size: 15px;
+}
+.search_page .right .total button{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.search_page .right .article{
+    text-align: center;
+    padding: 50px;
+}
+.search_page .right .article a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.search_page .right .articles_page{
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    background-color: rgb(236, 232, 232);
+    padding: 20px;
 }
-.search_page .right .forthflex div:nth-child(1){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
+.search_page .right .articles_page_left{
+    width: 49%;
 }
-.search_page .right .forthflex div:nth-child(2){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
+.search_page .right .articles_page_left div{
+    background-color: white;
 }
-.search_page .right .forthflex div:nth-child(3){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;    
+.search_page .right .articles_page_left h4{
+    font-size: 16px;
 }
-.search_page .right .fifthflex{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+.search_page .right .articles_page_left p{
+    padding:20px 0px;
+    font-size: 16px;
 }
-.search_page .right .fifthflex div:nth-child(1){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
+.search_page .right .articles_page_left button{
+    width: 80px;
+    height: 30px;
+    background-color:black;
 }
-.search_page .right .fifthflex div:nth-child(2){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;
+.search_page .right .articles_page_left button a{
+    text-decoration: none;
+    color: white;
 }
-.search_page .right .fifthflex div:nth-child(3){
-    border: 1px solid black;
-    width: 280px;
-    height: 400px;    
+.search_page .right .articles_page_right{
+    width: 49%;
+}
+.search_page .right .articles_page_right div{
+    background-color: white;
+}
+.search_page .right .articles_page_right h4{
+    font-size: 16px;
+}
+.search_page .right .articles_page_right p{
+    padding:20px 0px;
+    font-size: 16px;
+}
+.search_page .right .articles_page_right button{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color:black;
+}
+.search_page .right .articles_page_right button a{
+    text-decoration: none;
+    color: white;
 }
