@@ -14,16 +14,23 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0px 2%;
-    border: 1px solid black;
+    background-color: #FF4B2B;
+    color: white;
 }
 header h1{
     display: block;
-    width: 15%;
-    font-size: 15px;
+    width: 20%;
     text-transform: capitalize;
+    font-size: 30px;
 }
 header h1 a{
     text-decoration: none;
+    color: white;
+}
+header h1 span{
+    letter-spacing: 2px;
+    text-decoration: underline;
+    font-weight: 400;
 }
 header form{
     width: 50%;
@@ -335,6 +342,7 @@ header ul li a{
 /* CHECK OUT */
 
 .checkout{
+    margin-top: 40px;
     display: flex;
 }
 .checkout>div:nth-child(1){

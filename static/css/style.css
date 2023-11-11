@@ -12,6 +12,35 @@ body{
     scroll-behavior: smooth;
     background-color: whitesmoke;
 }
+.popup.active{
+    display: block;
+}
+.popup{
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: white;
+    width: 50%;
+    height: fit-content;
+    padding: 40px;
+    box-shadow: 1px 8px 2px 1px silver;
+    border-radius: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.popup button{
+    text-transform: capitalize;
+    margin: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid saddlebrown;
+}
 .abstract_options{
     z-index: 5;
     position: fixed;
