@@ -18,11 +18,17 @@ const isRefreshTokenExpired = (token) => {
 // This is the login function that passes the login details to the server
 const Login = async() =>{
     const loginDetails = {
-        'username': 'slliks4',
-        'password': 'Edward@2004'
+        'username': 'admin',
+        'password': 'admin'
     };
-
-    await getTokens(loginDetails);
+    try {
+        const gettoken = await getTokens(loginDetails);
+        if (gettoken){
+            return true;
+        }        
+    } catch (error) {
+        
+    }
 };
 
 // This is the logout function it clears the access token, refresh token, and customer id from the cookies
@@ -35,7 +41,7 @@ const Logout = async () => {
 
 // This is the getToken function that gets the access token and refresh token from the server then stores it in the cookies
 const getTokens = async (loginDetails) => {
-    const url = 'https://type-web-production.up.railway.app/token/';
+    const url = 'http://127.0.0.1:8000//token/';
 
     try {
         const response = await fetch(url, {
@@ -73,7 +79,7 @@ const getTokens = async (loginDetails) => {
 async function Token_refresh(refresh){
     const cookies = document.cookie.split(';');
 
-    const url = 'https://type-web-production.up.railway.app/token/refresh/';
+    const url = 'http://127.0.0.1:8000//token/refresh/';
 
     try {
         const response = await fetch(url, {
@@ -204,7 +210,14 @@ const popUp = async() => {
     // calls the login function to login as a user
     login.addEventListener('click', async (event) => {
         event.preventDefault();
-        await Login();
+        try {
+            const log = await Login();
+            if (log){
+                closePopup();
+            }
+        } catch (error) {
+            
+        }
     });
     // calls the closePopup function to close the popup
     close.addEventListener('click', async (event) => {
@@ -221,7 +234,7 @@ const closePopup = async() => {
 
 // This is the getCustomerDetails function that gets the customer details from the server
 const getCustomerDetails = async(customerId) => {
-    const url = `https://type-web-production.up.railway.app/customer_details/${customerId}/`;
+    const url = `http://127.0.0.1:8000//customer_details/${customerId}/`;
 
     try {
         const response = await fetch(url);
@@ -252,7 +265,7 @@ const getCustomerDetails = async(customerId) => {
 
 // This is the createGuestUser function that creates a new guest user in the database
 const createGuestUser = async() =>{
-    const url = `https://type-web-production.up.railway.app/customer_model/`;
+    const url = `http://127.0.0.1:8000//customer_model/`;
     
     try {
         const response = await fetch(url,{
